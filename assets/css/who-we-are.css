@@ -1,0 +1,70 @@
+.community {
+  padding: 2rem 3rem 4rem 3rem;
+  text-align: center;
+}
+.community-title {
+  color: #8D0606;
+  font: 400 3.1875rem 'Pacifico', cursive;
+}
+.community-description {
+  color: #8C8888;
+  font: 300 1.75rem 'Roboto', sans-serif;
+}
+.community-peoples {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}
+.people {
+  display: flex;
+  flex-direction: column;
+}
+.people-image {
+  background: red;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  clip-path: circle();
+  height: 18.75rem;
+  margin: 1rem auto;
+  object-fit: cover;
+  width: 18.75rem;
+}
+.people-image-roberta {
+  background-image: url('../img/pessoas/roberta.jpg');
+}
+.people-image-marcela {
+  background-image: url('../img/pessoas/marcela.jpg');
+}
+.people-image-andreia {
+  background-image: url('../img/pessoas/andreia.jpg')
+}
+.people-name {
+  color: #8D0606;
+  font: 400 2rem 'Pacifico', cursive;
+  margin-bottom: 1rem;
+}
+.people-function {
+  color: #8C8888;
+  font: 300 1.25rem 'Roboto', sans-serif;
+  text-transform: lowercase;
+}
+
+@media screen and (max-width: 768px) {
+  .community {
+    padding: 2rem;
+  }
+  .community-title {
+    font-size: 2.5rem;
+  }
+  .community-description {
+    font-size: 1.5rem;
+  }
+  .community-peoples {
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(3, 1fr);
+    gap: 2.5rem;
+  }
+  .people-name {
+    margin-bottom: 0;
+  }
+}

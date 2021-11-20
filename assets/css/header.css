@@ -1,0 +1,61 @@
+html {
+  scroll-behavior: smooth;
+}
+.menu {
+  display: flex;
+  align-items: center;
+  padding: 0 1rem;
+  justify-content: space-between;
+  position: fixed;
+  z-index: 1;
+  background: #FDFDFD;
+  top: 0;
+  right: 0;
+  left: 0;
+  box-shadow: 1px 1px 1px 1px rgba(3, 3, 3, 0.4)
+}
+.menu-logo {
+  font: 700 3rem 'Roboto', sans-serif;
+  color: #020202;
+  padding: 1rem 0;
+}
+.menu-logo span {
+  color: #117711;
+  position: relative;
+}
+.menu-list {
+  display: flex;
+  gap: 1.125rem;
+}
+.menu-item {
+  text-decoration: none;
+  list-style: none;
+}
+.menu-link {
+  text-decoration: none;
+  cursor: pointer;
+  color: #808080;
+  font-size: 1.25rem;
+}
+.menu-link.active {
+  color: #000;
+  font-weight: bold;
+}
+.menu-link:hover {
+  text-decoration: underline;
+}
+
+@media screen and (max-width: 768px){
+  .menu {
+    justify-content: center;
+    padding: 1.5rem 0.75rem;
+  }
+  .menu-list {
+    gap: 1rem;
+  }
+  .menu-logo {
+    visibility: hidden;
+    opacity: 0;
+    display: none;
+  }
+}

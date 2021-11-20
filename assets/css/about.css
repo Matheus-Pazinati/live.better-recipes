@@ -1,0 +1,24 @@
+.about {
+  text-align: center;
+  padding: 3.125rem 8.72rem;
+}
+.about-title {
+  font: 400 3.1875rem 'Pacifico', cursive;
+  color: #8D0606;
+}
+.about-description {
+  font: 300 1.75rem Roboto;
+  color: #8C8888;
+}
+
+@media screen and (max-width: 768px) {
+  .about {
+    padding: 1.5rem;
+  }
+  .about-title {
+    font-size: 2.5rem;
+  }
+  .about-description {
+    font-size: 1.5rem;
+  }
+}

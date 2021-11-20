@@ -1,0 +1,65 @@
+.modal {
+  background: rgba(0, 0, 0, 0.7);
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 0;
+  visibility: hidden;
+}
+.modal.active {
+  opacity: 1;
+  visibility: visible;
+}
+.modal-container {
+  background: #FAFAFA;
+  width: 70%;
+  height: 50%;
+  padding: 1rem 2rem;
+}
+.modal-header {
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: 1rem;
+  border-bottom: 1px solid #333333;
+}
+.modal-title {
+  font: 400 3.1875rem 'Roboto', cursive;
+  color: #8D0606;
+
+}
+.icon-close {
+  font-size: 2rem;
+  color: #333333;
+  cursor: pointer;
+  opacity: 0.7;
+  height: 2rem;
+}
+.icon-close:hover {
+  opacity: 1;
+}
+.modal-description {
+  font: 400 1.5rem 'Roboto', sans-serif;
+}
+
+@media (max-width: 768px) {
+  .modal-container {
+    width: 80vw;
+  }
+  .modal-title {
+    font-size: 1.5rem;
+    margin-top: 1rem;
+  }
+  .icon-close {
+    font-size: 1.5rem;
+    margin-top: .5rem;
+  }
+  .modal-description {
+    font-size: 1rem;
+  }
+}
