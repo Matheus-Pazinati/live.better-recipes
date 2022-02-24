@@ -21,33 +21,18 @@ const Modal = {
   }
 }
 
-let recipeDescriptions = [] //Array que armazena a descrição de cada uma das receitas
-recipeDescriptions[0] = "Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit facilis perspiciatis, esse possimus eaque totam, sed repudiandae eligendi iusto dolorum a pariatur voluptate sunt explicabo similique, quos qui odit illo?"
-recipeDescriptions[1] = "Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit facilis perspiciatis, esse possimus eaque totam, sed repudiandae eligendi iusto dolorum a pariatur voluptate sunt explicabo similique, quos qui odit illo?"
-recipeDescriptions[2] = "Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit facilis perspiciatis, esse possimus eaque totam, sed repudiandae eligendi iusto dolorum a pariatur voluptate sunt explicabo similique, quos qui odit illo?"
-recipeDescriptions[3] = "Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit facilis perspiciatis, esse possimus eaque totam, sed repudiandae eligendi iusto dolorum a pariatur voluptate sunt explicabo similique, quos qui odit illo?"
-recipeDescriptions[4] = "Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit facilis perspiciatis, esse possimus eaque totam, sed repudiandae eligendi iusto dolorum a pariatur voluptate sunt explicabo similique, quos qui odit illo?"
-recipeDescriptions[5] = "Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit facilis perspiciatis, esse possimus eaque totam, sed repudiandae eligendi iusto dolorum a pariatur voluptate sunt explicabo similique, quos qui odit illo?"
-
-let Abacate = new Recipe();
-let Kiwi = new Recipe();
-let Vegetais = new Recipe();
-let Juliana = new Recipe();
-let Oriental = new Recipe();
-let Beterrabas = new Recipe();
-
-let recipes = [Abacate, Kiwi, Vegetais, Juliana, Oriental, Beterrabas]//Armazena cada uma das receitas de classe Recipe
+const recipesDescriptions = "Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit facilis perspiciatis, esse possimus eaque totam, sed repudiandae eligendi iusto dolorum a pariatur voluptate sunt explicabo similique, quos qui odit illo?"
 let recipeTitles = document.querySelectorAll('.recipe-title') //Seleciona o título das receitas no HTML
+let recipes = new Array()//Array vazio, que conterá cada uma das receitas
 
-recipes.forEach((recipe, index) => { //Para cada uma das receitas (Recipe)
-  recipe.name = recipeTitles[index].textContent //O nome de cada uma será de acordo com o nome no HTML
-  recipe.description = recipeDescriptions[index]//Definindo a descrição de cada receita
+recipeTitles.forEach((recipe, index) => { //Para cada uma das receitas no HTML...
+  recipes[index] = new Recipe(recipeTitles[index].textContent, recipesDescriptions) //Adicione no array
 })
 
 const recipeButtons = document.querySelectorAll('[data-recipe-button]')//Seleciona todos os botões Ver receita
 recipeButtons.forEach((button, index) => { //Pra cada botão...
   let chosenRecipe = recipes[index]//Neste momento, chosenRecipe pode ser qualquer receita
-  button.addEventListener('click', () => { //Quando eu clicar emum dos botões de Ver receita...
+  button.addEventListener('click', () => { //Quando eu clicar em um dos botões de Ver receita...
     Modal.open()//Abra o modal
     chosenRecipe.show(Modal.title, Modal.description)//Neste momento, chosenRecipe vai ser a receita que foi clicada, e então executa o método da classe Recipe
   })
