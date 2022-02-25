@@ -9,7 +9,7 @@ Você pode conferir o site através deste link: <a href="https://matheus-pazinat
 </p>
 <br>
 <h2>🎯 Objetivo </h2>
-<p>Melhorar a organização do CSS, separando cada sessão da página em arquivos CSS, para facilitar a manutenção e controle da página, além de práticar HTML e Javascript</p>
+<p>Aplicar na prática uma das formas de se organizar o CSS da página, que é separar cada componente da página (Cabeçalho, Banner, Sobre, Receitas, Rodapé...) em pequenos arquivos, facilitando a manutenção e visualização do código. Outro objetivo foi colocar em prática alguns conceitos de Javascript aprendidos nos cursos da Alura (Criação de classes e métodos, métodos de array, manipulação do DOM).  </p>
 <br>
 <h2>🚀 Tecnologias utilizadas</h2>
 <ul>
