@@ -11,7 +11,7 @@
   color: #8C8888;
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 1000px) {
   .about {
     padding: 1.5rem;
   }

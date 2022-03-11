@@ -49,7 +49,7 @@
   text-transform: lowercase;
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 1000px) {
   .community {
     padding: 2rem;
   }

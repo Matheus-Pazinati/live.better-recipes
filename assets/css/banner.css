@@ -18,7 +18,7 @@
   width: 100%;
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 1000px) {
   .banner-image {
     height: calc(80vh - 66px);
   }

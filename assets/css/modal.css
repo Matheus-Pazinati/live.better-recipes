@@ -47,7 +47,7 @@
   font: 400 1.5rem 'Roboto', sans-serif;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 1000px) {
   .modal-container {
     width: 80vw;
   }
