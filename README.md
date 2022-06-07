@@ -18,6 +18,12 @@ Você pode conferir o site através deste link: <a href="https://matheus-pazinat
   <li>Javascript</li>
 </ul>
 <br>
+<h2>📌 Melhorias a serem implementadas</h2>
+<ul>
+  <li>Pesquisar e mostrar receitas que realmente existam</li>
+  <li>Salvar as receitas em uma API</li>
+</ul>
+<br>
 <h2>🏷️ Layout</h2>
 <p>Você pode visualizar o layout do projeto através deste link: <a href="https://www.figma.com/file/0gMF5BPgplPYqQA6Om1T1sk9/alura-bootstrap?node-id=0%3A1">Layout do projeto</a>. É necessário possuir uma conta no <a href="https://figma.com">Figma</a> para acessá-lo.</p>
 <br>
