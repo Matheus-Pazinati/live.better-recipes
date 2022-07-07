@@ -20,8 +20,9 @@ Você pode conferir o site através deste link: <a href="https://matheus-pazinat
 <br>
 <h2>📌 Melhorias a serem implementadas</h2>
 <ul>
-  <li>Pesquisar e mostrar receitas que realmente existam</li>
-  <li>Criar uma API com Node e Express para armazenar as receitas</li>
+  <li>Pesquisar e mostrar receitas que realmente existam.</li>
+  <li>Criar uma API com Node e Express para armazenar as receitas.</li>
+  <li>Criar painel administrativo para gerenciar (adicionar, excluir, editar) as receitas.</li>
 </ul>
 <br>
 <h2>🏷️ Layout</h2>
