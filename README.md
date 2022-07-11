@@ -1,4 +1,4 @@
-<h1 align="center">Live.Better</h1>
+<h1 align="center">👩‍🍳 Live.Better</h1>
 <p align="center">
   <img src="./assets/.github/banner-github.jpg">
 </p>
