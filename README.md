@@ -1,6 +1,6 @@
 <h1 align="center">Live.Better</h1>
 <p align="center">
-  <img src="https://media.giphy.com/media/kENgo7jqLHvJBJxwZ4/giphy.gif">
+  <img src="./assets/.github/banner-github.jpg">
 </p>
 <br>
 <h2>🥗 Sobre</h2>
@@ -20,8 +20,8 @@ Você pode conferir o site através deste link: <a href="https://matheus-pazinat
 <br>
 <h2>📌 Melhorias a serem implementadas</h2>
 <ul>
-  <li>Pesquisar e mostrar receitas que realmente existam.</li>
-  <li>Criar uma API com Node e Express para armazenar as receitas.</li>
+  <li>Pesquisar e mostrar receitas que realmente existam. - Ok ✔️</li>
+  <li>Criar uma API com Node e Express para armazenar as receitas. - Ok ✔️</li>
   <li>Criar painel administrativo para gerenciar (adicionar, excluir, editar) as receitas.</li>
 </ul>
 <br>
