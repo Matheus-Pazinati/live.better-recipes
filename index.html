@@ -38,11 +38,19 @@
         </section>
         <section class="recipes" id="recipes">
           <div class="recipe">
+            <img src="./assets/img/receitas/receita-salada.jpg" alt="Salada de folhas" class="recipe-image">
+            <div class="recipe-content">
+              <h2 class="recipe-title">Salada de folhas</h2>
+              <p class="recipe-description">Receita saudável, com poucos ingredientes e fácil de preparar.</p>
+              <button class="recipe-button" data-recipe-button="1">Ver receita</button>
+            </div>
+          </div>
+          <div class="recipe">
             <img src="./assets/img/receitas/receita-penne.jpg" alt="Penne com escarola e atum" class="recipe-image">
             <div class="recipe-content">
               <h2 class="recipe-title">Penne com escarola e atum</h2>
               <p class="recipe-description">Receita saudável, com poucos ingredientes e fácil de preparar.</p>
-              <button class="recipe-button" data-recipe-button>Ver receita</button>
+              <button class="recipe-button" data-recipe-button="2">Ver receita</button>
             </div>
           </div>
           <div class="recipe">
@@ -50,15 +58,7 @@
             <div class="recipe-content">
               <h2 class="recipe-title">Pretzels de pizza</h2>
               <p class="recipe-description">Receita saudável, com poucos ingredientes e fácil de preparar.</p>
-              <button class="recipe-button" data-recipe-button>Ver receita</button>
-            </div>
-          </div>
-          <div class="recipe">
-            <img src="./assets/img/receitas/receita-salada.jpg" alt="Salada de folhas" class="recipe-image">
-            <div class="recipe-content">
-              <h2 class="recipe-title">Salada de folhas</h2>
-              <p class="recipe-description">Receita saudável, com poucos ingredientes e fácil de preparar.</p>
-              <button class="recipe-button" data-recipe-button>Ver receita</button>
+              <button class="recipe-button" data-recipe-button="3">Ver receita</button>
             </div>
           </div>
           <div class="recipe">
@@ -66,7 +66,7 @@
             <div class="recipe-content">
               <h2 class="recipe-title">Brigadeiro vegano</h2>
               <p class="recipe-description">Sobremesa light, com poucos ingredientes e fácil de preparar.</p>
-              <button class="recipe-button" data-recipe-button>Ver receita</button>
+              <button class="recipe-button" data-recipe-button="4">Ver receita</button>
             </div>
           </div>
           <div class="recipe">
@@ -74,7 +74,7 @@
             <div class="recipe-content">
               <h2 class="recipe-title">Mousse de pitaya</h2>
               <p class="recipe-description">Sobremesa light, com poucos ingredientes e fácil de preparar.</p>
-              <button class="recipe-button" data-recipe-button>Ver receita</button>
+              <button class="recipe-button" data-recipe-button="5">Ver receita</button>
             </div>
           </div>
           <div class="recipe">
@@ -82,7 +82,7 @@
             <div class="recipe-content">
               <h2 class="recipe-title">Granola de coco crocante</h2>
               <p class="recipe-description">Sobremesa light, com poucos ingredientes e fácil de preparar.</p>
-              <button class="recipe-button" data-recipe-button>Ver receita</button>
+              <button class="recipe-button" data-recipe-button="6">Ver receita</button>
             </div>
           </div>
         </section>
@@ -90,9 +90,14 @@
           <div class="modal-container">
             <div class="modal-header">
               <h2 class="modal-title"></h2>
-              <i class="icon-close" onclick="Modal.close()"></i>
+              <i class="icon-close"></i>
             </div>
-            <p class="modal-description"></p>
+            <div class="modal-ingredients">
+              <h3 class="modal-title--sec">Ingredientes</h3>
+            </div>
+            <div class="modal-preparation">
+              <h3 class="modal-title--sec">Modo de preparo</h3>
+            </div>
           </div>
         </section>
         <section class="community" id="community">
@@ -120,6 +125,6 @@
       <footer>
         <span class="footer-contact">livebetter@gmail.com</span>
       </footer>
-      <script src="./main.js"></script>
+      <script src="./main.js" type="module"></script>
     </body>
 </html>

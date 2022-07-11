@@ -19,7 +19,7 @@
 .modal-container {
   background: #FAFAFA;
   width: 70%;
-  height: 50%;
+  height: 90%;
   padding: 1rem 2rem;
 }
 .modal-header {
@@ -31,7 +31,14 @@
 .modal-title {
   font: 400 3.1875rem 'Roboto', cursive;
   color: #8D0606;
-
+}
+.modal-title--sec {
+  font: 700 2rem 'Roboto', cursive;
+  padding: 2.5rem 0 1rem 0;
+  color: #8D0606;
+}
+.modal-item {
+  font: 400 1.5rem 'Roboto', cursive;
 }
 .icon-close {
   font-size: 2rem;
@@ -54,6 +61,12 @@
   .modal-title {
     font-size: 1.5rem;
     margin-top: 1rem;
+  }
+  .modal-title--sec {
+    font-size: 1.5rem;
+  }
+  .modal-item {
+    font-size: 1.25rem;
   }
   .icon-close {
     font-size: 1.5rem;
